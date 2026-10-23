@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Privacy policy · HangClip</title>
+    <!--
+      One self-contained page, ready to host (#46, D9): no scripts, no trackers, no external fonts or files.
+      The same words as docs/store/privacy-policy.md. Colors are HangClip's tokens (src/ui/tokens.css).
+    -->
+    <style>
+      :root {
+        --sky: #e7f2fa;
+        --card: #ffffff;
+        --edge: #cddde9;
+        --ink: #1b2a3a;
+        --muted: #55677a;
+        --wet-ink: #1d67aa;
+        --peg: #e3a94f;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --sky: #0e1826;
+          --card: #1a2738;
+          --edge: #2b3d54;
+          --ink: #e6edf5;
+          --muted: #9cacbd;
+          --wet-ink: #7dbdf2;
+          --peg: #e7b562;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--sky);
+        color: var(--ink);
+        font: 16px/1.6 system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      }
+      main {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 40px 20px 64px;
+      }
+      h1 {
+        font-size: clamp(28px, 5vw, 40px);
+        line-height: 1.15;
+        margin: 0 0 6px;
+      }
+      h2 {
+        font-size: 21px;
+        margin: 36px 0 8px;
+      }
+      .muted {
+        color: var(--muted);
+      }
+      .lead {
+        background: var(--card);
+        border: 1px solid var(--edge);
+        border-left: 6px solid var(--peg);
+        border-radius: 14px;
+        padding: 14px 18px;
+        margin: 24px 0;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: var(--card);
+        border: 1px solid var(--edge);
+        border-radius: 14px;
+        overflow: hidden;
+        font-size: 15px;
+      }
+      th,
+      td {
+        text-align: left;
+        vertical-align: top;
+        padding: 10px 12px;
+        border-bottom: 1px solid var(--edge);
+      }
+      tr:last-child td {
+        border-bottom: 0;
+      }
+      a {
+        color: var(--wet-ink);
+      }
+      a:focus-visible {
+        outline: 3px solid var(--wet-ink);
+        outline-offset: 2px;
+      }
+      li + li {
+        margin-top: 6px;
+      }
+      @media (max-width: 560px) {
+        table,
+        tbody,
+        tr,
+        td,
+        th {
+          display: block;
+        }
+        thead {
+          display: none;
+        }
+        td:first-child {
+          font-weight: 700;
+        }
+        td {
+          border-bottom: 0;
+          padding: 4px 12px;
+        }
+        tr {
+          border-bottom: 1px solid var(--edge);
+          padding: 8px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>HangClip privacy policy</h1>
+      <p class="muted">Last updated: 21 October 2026 · Applies to HangClip 0.9 (the beta)</p>
+
+      <p class="lead">
+        <strong>In one line:</strong> HangClip keeps what you grab on your own computer. It has no account, collects
+        nothing about you, and sends nothing anywhere.
+      </p>
+      <p>This page says exactly what the extension does with your data. It is checked against HangClip's source code before each release.</p>
+
+      <h2>What HangClip keeps, and where</h2>
+      <p>
+        HangClip keeps the cards on your line and in your Basket, and your settings. All of it stays in Chrome on this
+        computer, in the extension's own storage. Nothing is copied to a server, to your Google account, or to any other
+        device.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">What</th>
+            <th scope="col">Why</th>
+            <th scope="col">How long</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Snips (pictures of part of a page you chose to snip) and their small previews</td>
+            <td>So you can copy or drag them later</td>
+            <td>Until you remove them, then 7 days in the Basket</td>
+          </tr>
+          <tr>
+            <td>Text and links you copy, when "Catch my copies" is on</td>
+            <td>So they hang on the line</td>
+            <td>The same</td>
+          </tr>
+          <tr>
+            <td>Pictures and links you hang with right-click "Hang image" or "Hang link"</td>
+            <td>So they hang on the line</td>
+            <td>The same</td>
+          </tr>
+          <tr>
+            <td>Download cards, when "Show my downloads" is on: the file's name, size, type, address and progress</td>
+            <td>So the card can show progress, open the file or show it in its folder</td>
+            <td>The same</td>
+          </tr>
+          <tr>
+            <td>The address and title of the page a card came from</td>
+            <td>So the card can say where it came from and open that page</td>
+            <td>The same as its card</td>
+          </tr>
+          <tr>
+            <td>Your settings (for example, the sites where copies are never caught)</td>
+            <td>So HangClip works the way you chose</td>
+            <td>Until you change them or remove HangClip</td>
+          </tr>
+        </tbody>
+      </table>
+      <p><strong>Never kept:</strong></p>
+      <ul>
+        <li>Text copied from password, credit card or one-time code fields, or text that contains what you typed in one.</li>
+        <li>
+          Anything you download in an Incognito window. (If you allow HangClip in Incognito windows, snips and copies you
+          make there are kept like any others, on this computer.)
+        </li>
+        <li>Anything about the pages you visit beyond the card you chose to make there.</li>
+      </ul>
+
+      <h2>What HangClip sends over the internet</h2>
+      <p>Nothing of its own. HangClip has no account, no analytics, no tracking, no ads and no servers.</p>
+      <p>The only network traffic is what you start:</p>
+      <ul>
+        <li>
+          <strong>Hang image:</strong> when you right-click a picture and choose Hang image, HangClip loads that one
+          picture from its address, the way the page already did, so it can keep a copy on the line.
+        </li>
+        <li>
+          <strong>Downloads:</strong> downloads are Chrome's own. When you click Retry on a card, Chrome starts that
+          download again. When you drag a finished download onto your desktop, Chrome loads the file again from its
+          address.
+        </li>
+        <li>
+          <strong>Send feedback</strong> (in Settings, during the beta) opens our feedback form in a new tab. HangClip
+          sends nothing with it; you choose what to type.
+        </li>
+      </ul>
+      <p>
+        When HangClip Pro arrives later, it will check your license key. This page will be updated before that happens,
+        and say exactly what is sent.
+      </p>
+
+      <h2>Who sees your data</h2>
+      <p>
+        Only you. HangClip does not sell, share, rent or transfer your data to anyone. We, the makers of HangClip, never
+        receive it.
+      </p>
+
+      <h2>Your choices</h2>
+      <ul>
+        <li><strong>Remove a card:</strong> it moves to the Basket. Cards in the Basket are deleted for good after 7 days.</li>
+        <li><strong>Delete forever:</strong> in the Basket, one card or all of them.</li>
+        <li>
+          <strong>Clear everything:</strong> in Settings, deletes every card and the Basket at once. Your settings stay.
+          Files in your Downloads folder are never touched.
+        </li>
+        <li>
+          <strong>Stop catching copies:</strong> turn off "Catch my copies", pause it for an hour, or list sites where
+          copies are never caught.
+        </li>
+        <li><strong>Remove HangClip:</strong> removing the extension from Chrome deletes everything it kept.</li>
+      </ul>
+      <p>HangClip never deletes, moves or renames the files you download. Removing a download card leaves the file where it is.</p>
+
+      <h2>Permissions, in plain words</h2>
+      <ul>
+        <li><strong>Storage:</strong> keeps your cards and settings on this computer.</li>
+        <li>
+          <strong>The active tab:</strong> captures the part of the page you snip, only when you press the snip shortcut
+          or click HangClip.
+        </li>
+        <li><strong>Scripting:</strong> shows the snip box and the line on the page you are using.</li>
+        <li><strong>Context menus:</strong> adds "Hang image" and "Hang link" to the right-click menu.</li>
+        <li><strong>Side panel:</strong> shows your line on Chrome's own pages, where it can't hang.</li>
+        <li><strong>Alarms:</strong> cleans up the Basket once a day, and keeps a download's card up to date while it runs.</li>
+        <li><strong>Offscreen:</strong> plays the optional "dry" sound when a download finishes.</li>
+        <li>
+          <strong>Downloads</strong> (only if you turn on "Show my downloads"): shows your downloads as cards and opens
+          them when you click.
+        </li>
+        <li>
+          <strong>All sites</strong> (only if you turn on "Show the line on every page" or "Catch my copies"): shows the
+          line on every page and catches what you copy there.
+        </li>
+      </ul>
+
+      <h2>Changes to this policy</h2>
+      <p>
+        If what HangClip does with data changes, this page changes first, with a new date at the top, and the
+        extension's store listing says so in its version notes.
+      </p>
+
+      <h2>Contact</h2>
+      <p>Questions about privacy: <a href="mailto:hangclip.app@gmail.com">hangclip.app@gmail.com</a></p>
+    </main>
+  </body>
+</html>
